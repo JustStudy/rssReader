@@ -15,7 +15,6 @@ import android.view.MenuItem;
 import com.example.likeRSS.DBContentProvider;
 import com.example.likeRSS.R;
 import com.example.likeRSS.RssDBHelper;
-import com.example.likeRSS.faceBookSources.FacebookActivity;
 import com.example.likeRSS.fragments.RSSItemDisplayerFragment;
 import com.example.likeRSS.twitter.TweetChatActivity;
 import com.example.likeRSS.vkSources.MainActivity;
@@ -43,7 +42,8 @@ public class RssItemDisplayActivity extends ActionBarActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("shareOnVk", MODE_WORLD_WRITEABLE);
         if (idButton == R.id.shareOnFacebook) {
             sharedPreferences.edit().putString("news", oneNewsItem[1]).commit();
-            startActivity(new Intent(this, FacebookActivity.class));
+            //startActivity(new Intent(this, FacebookActivity.class));
+            startActivity(new Intent(this, FacebookStartActivity.class));
         }
 
         if (idButton == R.id.shareOnTwitter) {

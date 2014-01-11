@@ -3,7 +3,7 @@
           package="com.example.likeRSS"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="6" android:targetSdkVersion="8"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -41,8 +41,7 @@
         <activity android:name=".activities.FavoriteNewItemActivity"></activity>
         <activity android:name=".activities.FavoriteNewsActivity"></activity>
 
-        <activity android:name=".faceBookSources.HomeActivity"></activity>
-        <activity android:name=".faceBookSources.FacebookActivity"></activity>
+        <activity android:name=".activities.FacebookStartActivity"></activity>
         <service
                 android:name=".forNet.MySimpleService"
                 android:icon="@drawable/image_rss_activities"
