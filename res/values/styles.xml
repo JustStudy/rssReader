@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textNews">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#576387</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

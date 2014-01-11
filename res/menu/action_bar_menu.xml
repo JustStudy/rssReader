@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:sabd="http://schemas.android.com/apk/res-auto"
+        >
+    <item android:id="@+id/go_to_db_news"
+          android:icon="@drawable/to_db"
+          sabd:showAsAction="always"></item>
+    <item android:id="@+id/start_service"
+          android:icon="@drawable/start_service_button"
+          android:title="start_service"
+          sabd:showAsAction="always"></item>
+    <item android:id="@+id/stop_service"
+          android:icon="@drawable/stop_service_button"
+          android:title="stop_service"
+          sabd:showAsAction="always"></item>
+
+</menu>

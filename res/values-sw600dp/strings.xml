@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="tablet">true</bool>
+    <string name="app_ID">1422503627981213</string>
+</resources>

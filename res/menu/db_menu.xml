@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:sabd="http://schemas.android.com/apk/res-auto"
+        >
+    <item android:id="@+id/like_unlike_new"
+          android:title="add/remove favorite"
+          android:icon="@drawable/abc_ab_bottom_solid_light_holo"
+          sabd:showAsAction="always"></item>
+    <item android:id="@+id/shareOnVK"
+          android:title="share Vk"
+          android:icon="@drawable/vk_image"
+          sabd:showAsAction="always"></item>
+    <item android:id="@+id/shareOnTwitter"
+          android:title="share Twitter"
+          android:icon="@drawable/twitter_bird"
+          sabd:showAsAction="always"></item>
+    <item android:id="@+id/shareOnFacebook"
+          android:title="share Facebook"
+          android:icon="@drawable/launch_facebook"
+          sabd:showAsAction="always"></item>
+</menu>

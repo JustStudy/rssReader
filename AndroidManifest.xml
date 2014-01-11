@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.likeRSS"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="18"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application android:theme="@style/Theme.AppCompat.Light" android:label="@string/app_name"
+                 android:icon="@drawable/rss_main_icon">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+                   android:value="@string/app_ID"/>
+        <provider android:name=".DBContentProvider" android:authorities="com.example.likeRSS.DBContentProvider"/>
+        <activity android:name=".activities.RSSListActivity"
+                  android:label="@string/app_name"
+                  android:icon="@drawable/image_rss_activities"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:label="@string/app_name"
+                android:launchMode="singleInstance"
+                android:name=".twitter.TweetChatActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="appfortwitter" android:host="callback"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".vkSources.LoginActivity"></activity>
+        <activity android:name=".vkSources.MainActivity"></activity>
+        <activity android:name=".activities.RssItemDisplayActivity"></activity>
+        <activity android:name=".activities.FavoriteNewItemActivity"></activity>
+        <activity android:name=".activities.FavoriteNewsActivity"></activity>
+
+        <activity android:name=".faceBookSources.HomeActivity"></activity>
+        <activity android:name=".faceBookSources.FacebookActivity"></activity>
+        <service
+                android:name=".forNet.MySimpleService"
+                android:icon="@drawable/image_rss_activities"
+                android:label="Simple Service"
+                >
+        </service>
+    </application>
+</manifest>

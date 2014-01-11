@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dip"
+            android:text="text_home"
+            android:textSize="20sp"/>
+
+    <Button
+            android:id="@+id/button_share_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            onClick="onFacebookClick"
+            android:text="button_share_facebook"/>
+
+
+</LinearLayout>
